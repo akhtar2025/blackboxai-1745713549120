@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Sleep - E-Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .quiz-section { display: none; }
+        .quiz-section.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Micro Sleep</h1>
+            <a href="dashboard.html" class="text-sm bg-blue-700 px-4 py-2 rounded hover:bg-blue-800">
+                Kembali ke Dashboard
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Learning Content -->
+        <div id="learning-content" class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Materi Micro Sleep</h2>
+
+            <!-- Definisi -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">1. Definisi Micro Sleep</h3>
+                <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="text-gray-700">
+                        Micro sleep adalah kondisi tertidur secara tidak sadar dalam waktu sangat singkat (1-30 detik). 
+                        Kondisi ini sangat berbahaya saat berkendara karena pengendara kehilangan kendali dan kesadaran 
+                        secara total meskipun hanya dalam hitungan detik.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Penyebab -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">2. Penyebab Micro Sleep</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-2">
+                            <i class="fas fa-moon text-blue-500 mr-2"></i>
+                            Kurang Tidur
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Tidur kurang dari 7-8 jam</li>
+                            <li>Kualitas tidur buruk</li>
+                            <li>Jadwal tidur tidak teratur</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-2">
+                            <i class="fas fa-clock text-blue-500 mr-2"></i>
+                            Waktu Berkendara
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Berkendara larut malam</li>
+                            <li>Perjalanan monoton/membosankan</li>
+                            <li>Berkendara terlalu lama</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-2">
+                            <i class="fas fa-pills text-blue-500 mr-2"></i>
+                            Kondisi Kesehatan
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Efek obat-obatan</li>
+                            <li>Kelelahan fisik</li>
+                            <li>Gangguan tidur</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-2">
+                            <i class="fas fa-temperature-high text-blue-500 mr-2"></i>
+                            Faktor Lingkungan
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Suhu udara panas</li>
+                            <li>Cahaya redup/gelap</li>
+                            <li>Getaran mesin monoton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pencegahan -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">3. Cara Mencegah Micro Sleep</h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-2">Sebelum Berkendara</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Tidur cukup (7-8 jam) sebelum berkendara</li>
+                            <li>Hindari berkendara pada jam rawan mengantuk (01.00-05.00)</li>
+                            <li>Pastikan kondisi tubuh fit</li>
+                            <li>Hindari konsumsi obat yang menyebabkan kantuk</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-2">Saat Berkendara</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Berhenti dan istirahat setiap 2 jam berkendara</li>
+                            <li>Minum air putih secukupnya</li>
+                            <li>Jaga sirkulasi udara dalam kendaraan</li>
+                            <li>Dengarkan musik atau radio</li>
+                            <li>Segera berhenti jika merasa mengantuk</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+                        <h4 class="font-semibold text-lg mb-2 text-red-600">Peringatan!</h4>
+                        <p class="text-red-700">
+                            Jika Anda merasa mengantuk saat berkendara, segera berhenti di tempat yang aman dan 
+                            istirahat sejenak. Keselamatan adalah prioritas utama!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="showQuiz()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                Mulai Quiz
+            </button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="quiz-section bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-6">Quiz Micro Sleep</h2>
+            
+            <form id="quiz-form" onsubmit="submitQuiz(event)" class="space-y-6">
+                <!-- Afektif Questions -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-blue-600">Pertanyaan Afektif</h3>
+                    
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <p class="font-semibold mb-2">1. Apa yang Anda lakukan jika merasa mengantuk saat berkendara?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="a" required class="mr-2">
+                                <span>Mempercepat laju agar cepat sampai tujuan</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="b" required class="mr-2">
+                                <span>Berhenti di tempat aman dan istirahat sejenak</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q1" value="c" required class="mr-2">
+                                <span>Memaksakan untuk terus berkendara</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <p class="font-semibold mb-2">2. Bagaimana sikap Anda terhadap jadwal tidur?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="a" required class="mr-2">
+                                <span>Tidur kapan saja saat sempat</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="b" required class="mr-2">
+                                <span>Menjaga jadwal tidur teratur 7-8 jam sehari</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q2" value="c" required class="mr-2">
+                                <span>Tidur siang saja sudah cukup</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <p class="font-semibold mb-2">3. Apa yang Anda lakukan saat harus berkendara malam hari?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="a" required class="mr-2">
+                                <span>Minum kopi berlebihan</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="b" required class="mr-2">
+                                <span>Istirahat cukup sebelumnya dan berhenti jika mengantuk</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q3" value="c" required class="mr-2">
+                                <span>Mendengarkan musik keras terus menerus</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Kognitif Questions -->
+                    <h3 class="text-xl font-semibold text-blue-600 mt-6">Pertanyaan Kognitif</h3>
+                    
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <p class="font-semibold mb-2">4. Apa yang dimaksud dengan micro sleep?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="a" required class="mr-2">
+                                <span>Tidur yang sangat nyenyak</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="b" required class="mr-2">
+                                <span>Tertidur tidak sadar dalam waktu singkat (1-30 detik)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q4" value="c" required class="mr-2">
+                                <span>Mengantuk ringan saat berkendara</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <p class="font-semibold mb-2">5. Berapa lama waktu maksimal berkendara sebelum harus istirahat?</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="a" required class="mr-2">
+                                <span>4 jam</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="b" required class="mr-2">
+                                <span>2 jam</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="q5" value="c" required class="mr-2">
+                                <span>6 jam</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                    Submit Quiz
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script>
+        // Check authentication
+        if (!Auth.isLoggedIn()) {
+            window.location.href = 'index.html';
+        }
+
+        const answers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'b'
+        };
+
+        function showQuiz() {
+            document.getElementById('learning-content').style.display = 'none';
+            document.getElementById('quiz-section').style.display = 'block';
+        }
+
+        function submitQuiz(event) {
+            event.preventDefault();
+            
+            let score = 0;
+            const total = Object.keys(answers).length;
+            
+            // Calculate score
+            Object.keys(answers).forEach(question => {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answers[question]) {
+                    score++;
+                }
+            });
+
+            // Convert to percentage
+            const percentage = (score / total) * 100;
+
+            // Update progress
+            Auth.updateProgress('microsleep', percentage);
+
+            // Show result and redirect
+            alert(`Nilai Anda: ${percentage}%\nSilakan lanjut ke materi berikutnya!`);
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>
